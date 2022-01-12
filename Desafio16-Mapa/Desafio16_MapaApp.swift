@@ -11,7 +11,7 @@ import SwiftUI
 struct Desafio16_MapaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            InitialView()
         }
     }
 }

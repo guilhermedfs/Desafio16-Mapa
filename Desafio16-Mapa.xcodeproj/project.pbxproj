@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		7D1A18D6278F3DAD00B5E695 /* Desafio16_MapaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A18D5278F3DAD00B5E695 /* Desafio16_MapaApp.swift */; };
-		7D1A18D8278F3DAD00B5E695 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A18D7278F3DAD00B5E695 /* ContentView.swift */; };
+		7D1A18D8278F3DAD00B5E695 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A18D7278F3DAD00B5E695 /* InitialView.swift */; };
 		7D1A18DA278F3DAF00B5E695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D1A18D9278F3DAF00B5E695 /* Assets.xcassets */; };
 		7D1A18DD278F3DAF00B5E695 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D1A18DC278F3DAF00B5E695 /* Preview Assets.xcassets */; };
+		7D1A18E4278F41AF00B5E695 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A18E3278F41AF00B5E695 /* LocationManager.swift */; };
+		7D1A18E6278F493000B5E695 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A18E5278F493000B5E695 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7D1A18D2278F3DAD00B5E695 /* Desafio16-Mapa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio16-Mapa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D1A18D5278F3DAD00B5E695 /* Desafio16_MapaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desafio16_MapaApp.swift; sourceTree = "<group>"; };
-		7D1A18D7278F3DAD00B5E695 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7D1A18D7278F3DAD00B5E695 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 		7D1A18D9278F3DAF00B5E695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D1A18DC278F3DAF00B5E695 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7D1A18E3278F41AF00B5E695 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		7D1A18E5278F493000B5E695 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +56,11 @@
 			isa = PBXGroup;
 			children = (
 				7D1A18D5278F3DAD00B5E695 /* Desafio16_MapaApp.swift */,
-				7D1A18D7278F3DAD00B5E695 /* ContentView.swift */,
+				7D1A18D7278F3DAD00B5E695 /* InitialView.swift */,
 				7D1A18D9278F3DAF00B5E695 /* Assets.xcassets */,
 				7D1A18DB278F3DAF00B5E695 /* Preview Content */,
+				7D1A18E3278F41AF00B5E695 /* LocationManager.swift */,
+				7D1A18E5278F493000B5E695 /* MapView.swift */,
 			);
 			path = "Desafio16-Mapa";
 			sourceTree = "<group>";
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D1A18D8278F3DAD00B5E695 /* ContentView.swift in Sources */,
+				7D1A18D8278F3DAD00B5E695 /* InitialView.swift in Sources */,
+				7D1A18E6278F493000B5E695 /* MapView.swift in Sources */,
 				7D1A18D6278F3DAD00B5E695 /* Desafio16_MapaApp.swift in Sources */,
+				7D1A18E4278F41AF00B5E695 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +280,8 @@
 				DEVELOPMENT_TEAM = X29R3L3J6V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +311,8 @@
 				DEVELOPMENT_TEAM = X29R3L3J6V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
