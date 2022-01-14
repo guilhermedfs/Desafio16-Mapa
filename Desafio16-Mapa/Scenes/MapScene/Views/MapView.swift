@@ -18,7 +18,7 @@ struct MapView: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             MapUIView(location: $manager.region, adress: $adress, pressed: $traceRoute, pinSelected: $pinSelected, viewModel: viewModel)
-                .ignoresSafeArea()
+            //                    .ignoresSafeArea(.bottom)
             if viewModel.shouldChange {
                 ButtonView(traceRoute: $traceRoute, shouldChange: $viewModel.shouldChange)
             }

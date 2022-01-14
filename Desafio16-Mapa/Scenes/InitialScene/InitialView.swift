@@ -11,9 +11,20 @@ import MapKit
 struct InitialView: View {
     @StateObject var auth = LocationManager()
     @StateObject var model = MapViewModel()
+    init() {
+        let appearance = UINavigationBarAppearance()
+            appearance.configureWithTransparentBackground()
+            appearance.backgroundColor = UIColor.systemBackground.withAlphaComponent(0.5)
+            UINavigationBar.appearance().standardAppearance = appearance
+    }
     var body: some View {
         if !auth.deniedAuthorization {
-            MapView(manager: auth, viewModel: model)
+            NavigationView {
+                MapView(manager: auth, viewModel: model)
+                
+                    .navigationTitle("Map Direction")
+                    .navigationBarTitleDisplayMode(.inline)
+            }
         } else {
             ErrorLocationView()
         }
