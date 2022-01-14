@@ -9,8 +9,14 @@ import SwiftUI
 import MapKit
 
 struct InitialView: View {
+    @StateObject var auth = LocationManager()
+    @StateObject var model = MapViewModel()
     var body: some View {
-        MapView()
+        if !auth.deniedAuthorization {
+            MapView(manager: auth, viewModel: model)
+        } else {
+            ErrorLocationView()
+        }
     }
 }
 
